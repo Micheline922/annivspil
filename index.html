@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#282124">
+  <meta name="description" content="Un anniversaire, des souvenirs, des mots sincères pour Elvis.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="Assets/app-icon.svg" type="image/svg+xml">
+  <title>Pour Elvis, avec tout mon cœur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <a class="wordmark" href="#accueil" aria-label="Accueil">une lettre, pour toi<span>.</span></a>
+    <nav aria-label="Navigation principale">
+      <a href="#lettre">La lettre</a>
+      <a href="#souvenirs">Souvenirs</a>
+      <a href="#ce-que-tu-es">Tes qualités</a>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <section class="hero" id="accueil" aria-labelledby="hero-title">
+      <div class="hero-ornament" aria-hidden="true"><span></span><span></span><span></span></div>
+      <p class="eyebrow" id="hero-kicker">Pour un jour qui compte</p>
+      <h1 id="hero-title">Joyeux anniversaire,<br><em>Amour</em></h1>
+      <p class="hero-subtitle" id="hero-subtitle">Tu me manques tellement...</p>
+      <a class="scroll-cue" href="#lettre"><span aria-hidden="true">↓</span> Quelques mots pour toi</a>
+      <p class="hero-note">Une page faite avec sincérité <span aria-hidden="true">·</span> et sans attente</p>
+    </section>
+
+    <section class="letter-section section-wrap" id="lettre" aria-labelledby="letter-heading">
+      <div class="section-intro reveal">
+        <p class="eyebrow">D'abord, la vérité</p>
+        <h2 id="letter-heading">Une lettre que je te devais</h2>
+        <p class="section-deck">Pour ton anniversaire, et pour les mots que je n'ai pas su te dire comme il le fallait.</p>
+      </div>
+      <article class="letter-paper reveal" aria-label="Lettre personnelle">
+        <div class="letter-topline"><span>À toi mon coeur</span>
+            <span aria-hidden="true">✳</span></div>
+        <div id="letter-content" class="letter-content" aria-live="polite"></div>
+        <p class="letter-signoff" id="letter-signoff">Avec toute ma sincérité, Micheline Ntale</p>
+      </article>
+    </section>
+
+    <section class="memories-section" id="souvenirs" aria-labelledby="memories-heading">
+      <div class="section-wrap">
+        <div class="section-intro reveal">
+          <p class="eyebrow">Nos instants</p>
+          <h2 id="memories-heading">Des souvenirs qui restent</h2>
+          <p class="section-deck">Les images et les vidéos que tu choisiras d'ajouter prendront leur place ici.</p>
+        </div>
+        <div class="gallery-toolbar reveal" role="group" aria-label="Filtrer les souvenirs">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Tout voir <span id="count-all">0</span></button>
+          <button class="filter-button" type="button" data-filter="photo" aria-pressed="false">Photos <span id="count-photos">0</span></button>
+          <button class="filter-button" type="button" data-filter="video" aria-pressed="false">Vidéos <span id="count-videos">0</span></button>
+        </div>
+        <div id="gallery" class="gallery-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="qualities-section section-wrap" id="ce-que-tu-es" aria-labelledby="qualities-heading">
+      <div class="section-intro reveal">
+        <p class="eyebrow">Ce que tu représentes pour moi</p>
+        <h2 id="qualities-heading">Il y a tant de choses que j'admire en toi</h2>
+        <p class="section-deck">Quelques mots à ouvrir, un à un.</p>
+      </div>
+      <div id="qualities-grid" class="qualities-grid"></div>
+    </section>
+
+    <section class="reply-section" id="reponse" aria-labelledby="reply-heading">
+      <div class="reply-inner reveal">
+        <p class="eyebrow">Et maintenant</p>
+        <h2 id="reply-heading">Tu ne me dois aucune réponse.</h2>
+        <p>Prends le temps et l'espace dont tu as besoin. Si, un jour, tu souhaites me parler, je serai là pour t'écouter sans me défendre.</p>
+        <div id="reply-action" class="reply-action"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Avec tendresse, et avec respect pour ton temps.</p>
+    <a href="#accueil">Revenir en haut <span aria-hidden="true">↑</span></a>
+  </footer>
+
+  <dialog class="media-dialog" id="media-dialog" aria-label="Souvenir agrandi">
+    <form method="dialog"><button class="dialog-close" aria-label="Fermer">Fermer <span aria-hidden="true">×</span></button></form>
+    <div class="dialog-media" id="dialog-media"></div>
+    <p class="dialog-caption" id="dialog-caption"></p>
+  </dialog>
+  <div class="load-error" id="load-error" role="alert" hidden></div>
+</body>
+</html>

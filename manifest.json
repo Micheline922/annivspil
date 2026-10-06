@@ -1,0 +1,21 @@
+{
+  "id": "./",
+  "name": "Pour mon coeur, avec tout mon cœur",
+  "short_name": "Mon cœur",
+  "description": "Une lettre, des souvenirs et des mots sincères.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fbf7f2",
+  "theme_color": "#282124",
+  "categories": ["lifestyle"],
+  "icons": [
+    {
+      "src": "Assets/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "_guide": {
+    "format": "Ce fichier doit rester du JSON valide : les commentaires // ne sont pas autorisés. Utilise ces notes de guide pour te repérer.",
+    "textes": "Modifie infos.nom, infos.titreSite, infos.sousTitre, les paragraphes de lettrePardon et les messages de qualites directement ci-dessous.",
+    "photos": "Les photos actuelles sont dans Assets/. Pour en remplacer une, modifie son url et sa caption dans galeriePhotos. Pour en ajouter, dépose le fichier dans Assets/ puis ajoute un objet { \"id\": 5, \"url\": \"Assets/ma-photo.jpg\", \"caption\": \"Légende du souvenir\", \"date\": \"Été 2024\" }.",
+    "videos": "Les vidéos actuelles sont dans Assets/. Pour en remplacer une, modifie son url et sa caption dans galerieVideos. Pour en ajouter, dépose le fichier dans Assets/ puis ajoute un objet { \"id\": 5, \"url\": \"Assets/ma-video.mp4\", \"poster\": \"Assets/ma-vignette.jpg\", \"caption\": \"Légende de la vidéo\" }. Le poster est facultatif.",
+    "reponse": "Renseigne infos.emailReponse avec une adresse e-mail pour afficher un lien de réponse. Laisse la chaîne vide pour ne pas afficher de lien mailto."
+  },
+  "infos": {
+    "nom": "My Love",
+    "titreSite": "Pour mon coeur, avec tout mon cœur",
+    "sousTitre": "Tu me manques tellement...",
+    "emailReponse": ""
+  },
+  "lettrePardon": {
+    "titre": "Une lettre que je te devais",
+    "paragraphes": [
+      "Joyeux anniversaire, bébé. Aujourd'hui, je pense à toi avec beaucoup de tendresse. J'aurais aimé que cette journée soit légère et heureuse pour toi. Je veux te souhaiter, malgré tout ce qui nous sépare en ce moment, tout le bonheur du monde, de la douceur et des raisons sincères de sourire.",
+      "Je veux aussi regarder en face ce que j'ai fait. Je t'ai été infidèle. Tu l'as découvert aujourd'hui, et je comprends que cette découverte puisse te bouleverser, te blesser et faire vaciller ta confiance. C'est ma faute. Je ne vais pas chercher d'excuse, minimiser les faits ni déplacer la responsabilité : je t'ai fait du mal, et j'en suis profondément désolée.",
+      "Ta colère est légitime. Tu as le droit d'être en colère, de ne pas vouloir me parler, de douter de tout ce que je te dis et de prendre la distance dont tu as besoin. Je ne vais pas te demander de me rassurer, de me pardonner vite ou de rendre cette journée plus facile pour moi. Tu ne me dois rien.",
+      "Je te demande pardon avec humilité, tout en sachant que ces mots ne réparent pas ce que j'ai abîmé et ne t'obligent à rien. Si tu choisis un jour de me parler, je veux t'écouter vraiment, répondre honnêtement et assumer les conséquences de mes actes. Je respecterai aussi ton silence et ta décision, quelle qu'elle soit.",
+      "Pour ton anniversaire, je te souhaite une année qui t'apporte la paix, l'amour que tu mérites, des projets qui te ressemblent et des personnes auprès desquelles tu te sens respecté et en sécurité. Tu comptes énormément pour moi. Je suis désolée de ne pas avoir été à la hauteur de la confiance que tu m'avais donnée."
+    ],
+    "signature": "Je t'aime énormement mon amour."
+  },
+  "galeriePhotos": [
+    {
+      "id": 1,
+      "url": "Assets/WhatsApp Image 2026-10-06 at 23.01.46.jpeg",
+      "caption": "Un souvenir à garder près du cœur"
+    },
+    {
+      "id": 2,
+      "url": "Assets/WhatsApp Image 2026-10-06 at 23.01.47.jpeg",
+      "caption": "Un instant précieux"
+    },
+    {
+      "id": 3,
+      "url": "Assets/WhatsApp Image 2026-10-06 at 23.01.47 (1).jpeg",
+      "caption": "Un moment qui me revient"
+    },
+    {
+      "id": 4,
+      "url": "Assets/WhatsApp Image 2026-10-06 at 23.01.48.jpeg",
+      "caption": "Un souvenir que je chéris"
+    }
+  ],
+  "galerieVideos": [
+    {
+      "id": 1,
+      "url": "Assets/WhatsApp Video 2026-10-06 at 23.01.19.mp4",
+      "caption": "Un souvenir en mouvement"
+    },
+    {
+      "id": 2,
+      "url": "Assets/WhatsApp Video 2026-10-06 at 23.01.23.mp4",
+      "caption": "Un instant à revoir"
+    },
+    {
+      "id": 3,
+      "url": "Assets/WhatsApp Video 2026-10-06 at 23.01.33.mp4",
+      "caption": "Un moment précieux"
+    },
+    {
+      "id": 4,
+      "url": "Assets/WhatsApp Video 2026-10-06 at 23.01.45.mp4",
+      "caption": "Un souvenir que je garde"
+    }
+  ],
+  "qualites": [
+    {
+      "id": 1,
+      "titre": "Ta douceur",
+      "message": "Ta façon de faire attention aux autres, souvent sans même t'en rendre compte, me touche profondément."
+    },
+    {
+      "id": 2,
+      "titre": "Ton courage",
+      "message": "J'admire ta capacité à avancer et à rester toi-même, même quand les choses sont difficiles."
+    },
+    {
+      "id": 3,
+      "titre": "Ton humour",
+      "message": "Tu sais apporter de la lumière à un moment ordinaire. Certains de tes éclats de rire me reviennent souvent."
+    },
+    {
+      "id": 4,
+      "titre": "Ta présence",
+      "message": "Avec toi, les petits instants prennent une place à part. Je garde précieusement ce qu'ils m'ont apporté."
+    },
+    {
+      "id": 5,
+      "titre": "Ta générosité",
+      "message": "Tu donnes beaucoup aux personnes qui comptent pour toi. Je n'oublie ni tes gestes ni ta façon d'être là."
+    },
+    {
+      "id": 6,
+      "titre": "Tout ce qui est toi",
+      "message": "Aucune liste ne pourrait résumer ce que tu représentes pour moi. Aujourd'hui, je voulais simplement te le dire."
+    }
+  ]
+}
